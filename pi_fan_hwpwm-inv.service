@@ -7,7 +7,7 @@ Type=simple
 User=root
 WorkingDirectory=/run
 PIDFile=/run/pi_fan_hwpwm.pid
-ExecStart=/usr/local/sbin/pi_fan_hwpwm "-i 1"
+ExecStart=/usr/local/sbin/pi_fan_hwpwm "-i"
 Restart=on-failure
 
 [Install]
