@@ -17,6 +17,14 @@ install: $(TARGET)
 	systemctl enable $(TARGET)
 	! systemctl is-active --quiet $(TARGET) || systemctl stop $(TARGET)
 	systemctl start $(TARGET)
+	
+
+install-inv: $(TARGET)
+	install $(TARGET) /usr/local/sbin
+	cp $(TARGET)-inv.service /etc/systemd/system/$(TARGET).service
+	systemctl enable $(TARGET)
+	! systemctl is-active --quiet $(TARGET) || systemctl stop $(TARGET)
+	systemctl start $(TARGET)	
 
 uninstall: clean
 	systemctl stop $(TARGET)
