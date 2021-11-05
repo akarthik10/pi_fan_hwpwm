@@ -133,7 +133,7 @@ int main(int argc, char *argv[]) {
   FILE *ft;
   char buf[100];
 
-  while ((opt = getopt(argc, argv, "g:v")) != -1) {
+  while ((opt = getopt(argc, argv, "g:vi")) != -1) {
     switch (opt) {
     case 'g':
       pin = atoi(optarg);
