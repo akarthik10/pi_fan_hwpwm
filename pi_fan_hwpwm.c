@@ -34,8 +34,8 @@
 
 #define PWM_PIN   18  // default, uses both GPIO 13 and GPIO 18
 #define HIGH_TEMP 65.
-#define ON_TEMP   55.
-#define OFF_TEMP  52.
+#define ON_TEMP   52.
+#define OFF_TEMP  50.
 #define MIN_FAN   150
 #define KICK_FAN  200
 #define MAX_FAN   480
